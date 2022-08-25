@@ -2,6 +2,13 @@
   "compilerOptions": {
     /* Type Checking */
     "strict": false, /* @todo Enable */
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
     "strictBindCallApply": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -22,13 +29,14 @@
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     /* Language and Environment */
-    "lib": [
-      "esnext",
-      "dom"
-    ],
-    "target": "esnext",
+    // "lib": [
+    //   "esnext",
+    //   "dom"
+    // ],
+    // "target": "esnext",
     /* Completeness */
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
   "include": [
     "types",

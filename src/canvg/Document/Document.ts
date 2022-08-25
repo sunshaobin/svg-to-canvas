@@ -16,7 +16,10 @@ import {
 /**
  * Function to create new canvas.
  */
-export type CreateCanvas = (width: number, height: number) => HTMLCanvasElement | OffscreenCanvas
+
+
+ // @ts-nocheck
+export type CreateCanvas = (width: number, height: number) => HTMLCanvasElement
 
 /**
  * Function to create new image.

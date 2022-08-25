@@ -20,6 +20,7 @@ export function offscreen({ DOMParser: DOMParserFallback }: IConfig = {}) {
     ignoreMouse: true,
     DOMParser: DOMParserFallback,
     createCanvas(width: number, height: number) {
+      // @ts-ignore
       return new OffscreenCanvas(width, height)
     },
     async createImage(url: string) {

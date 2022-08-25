@@ -137,14 +137,10 @@ export abstract class RenderedElement extends Element {
         if (typeof ctx.setLineDash !== 'undefined') {
           ctx.setLineDash(gaps)
         } else
-        // @ts-expect-error Handle browser prefix.
         if (typeof ctx.webkitLineDash !== 'undefined') {
-          // @ts-expect-error Handle browser prefix.
           ctx.webkitLineDash = gaps
         } else
-        // @ts-expect-error Handle browser prefix.
         if (typeof ctx.mozDash !== 'undefined' && !(gaps.length === 1 && gaps[0] === 0)) {
-          // @ts-expect-error Handle browser prefix.
           ctx.mozDash = gaps
         }
 
@@ -153,14 +149,10 @@ export abstract class RenderedElement extends Element {
         if (typeof ctx.lineDashOffset !== 'undefined') {
           ctx.lineDashOffset = offset
         } else
-        // @ts-expect-error Handle browser prefix.
         if (typeof ctx.webkitLineDashOffset !== 'undefined') {
-          // @ts-expect-error Handle browser prefix.
           ctx.webkitLineDashOffset = offset
         } else
-        // @ts-expect-error Handle browser prefix.
         if (typeof ctx.mozDashOffset !== 'undefined') {
-          // @ts-expect-error Handle browser prefix.
           ctx.mozDashOffset = offset
         }
       }

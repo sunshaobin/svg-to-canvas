@@ -1,4 +1,3 @@
-// @ts-ignore
 import RGBColor from 'rgbcolor'
 import {
   compressSpaces,
